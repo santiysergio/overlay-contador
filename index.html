@@ -15,23 +15,33 @@
             margin: 0;
         }
 
-        iframe {
-            width: 100%; /* Ancho del 100% para llenar el contenedor */
-            height: 80vh; /* Altura ajustada para el segundo iframe */
-            border: none;
+        .iframe-container {
             margin-bottom: 20px; /* Espacio entre los iframes */
         }
 
-        /* Estilos personalizados para el segundo iframe */
-        iframe:nth-child(2) {
-            height: 90vh; /* Altura más grande para el segundo iframe */
+        iframe {
+            width: 800px;
+            height: 600px;
+            border: none;
+        }
+
+        /* Estilos personalizados para el segundo iframe (reloj) */
+        #reloj-iframe {
+            width: 100%; /* Ancho del 100% para llenar el contenedor */
+            height: 90vh; /* Altura ajustada para el reloj */
         }
     </style>
 </head>
 <body>
     <!-- El primer iframe sin la barra de dirección (sandbox) -->
-    <iframe src="https://app.overlayon.com/overlay/64f1b6ea2748035d386cb43a" sandbox=""></iframe>
-    <!-- El segundo iframe con una altura mayor -->
-    <iframe src="https://santiysergio.github.io/reloj.github.io/"></iframe>
+    <div class="iframe-container">
+        <iframe src="https://app.overlayon.com/overlay/64f1b6ea2748035d386cb43a" sandbox=""></iframe>
+    </div>
+    
+    <!-- El segundo iframe (reloj) con una altura mayor -->
+    <div class="iframe-container">
+        <iframe id="reloj-iframe" src="https://santiysergio.github.io/reloj.github.io/"></iframe>
+    </div>
 </body>
 </html>
+
