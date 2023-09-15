@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previsualización Overlay y Reloj</title>
+    <title>Previsualización Overlay</title>
     <style>
         body {
             background-color: black;
@@ -15,33 +15,19 @@
             margin: 0;
         }
 
-        .iframe-container {
-            margin-bottom: 20px; /* Espacio entre los iframes */
-        }
-
         iframe {
             width: 800px;
             height: 600px;
             border: none;
-        }
-
-        /* Estilos personalizados para el segundo iframe (reloj) */
-        #reloj-iframe {
-            width: 100%; /* Ancho del 100% para llenar el contenedor */
-            height: 90vh; /* Altura ajustada para el reloj */
+            margin-bottom: 20px; /* Espacio entre los iframes */
         }
     </style>
 </head>
 <body>
-    <!-- El primer iframe sin la barra de dirección (sandbox) -->
-    <div class="iframe-container">
-        <iframe src="https://app.overlayon.com/overlay/64f1b6ea2748035d386cb43a" sandbox=""></iframe>
-    </div>
-    
-    <!-- El segundo iframe (reloj) con una altura mayor -->
-    <div class="iframe-container">
-        <iframe id="reloj-iframe" src="https://santiysergio.github.io/reloj.github.io/"></iframe>
-    </div>
+    <iframe src="https://app.overlayon.com/overlay/64f1b6ea2748035d386cb43a"></iframe>
+    <iframe src="https://santiysergio.github.io/reloj.github.io/"></iframe>
 </body>
+</html>
+
 </html>
 
