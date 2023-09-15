@@ -6,10 +6,11 @@
     <title>Previsualización Overlay</title>
     <style>
         body {
-            background-color: black; /* Establecemos el fondo en negro */
+            background-color: black;
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* Para apilar los iframes verticalmente */
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
         }
@@ -18,10 +19,12 @@
             width: 800px;
             height: 600px;
             border: none;
+            margin-bottom: 20px; /* Espacio entre los iframes */
         }
     </style>
 </head>
 <body>
     <iframe src="https://app.overlayon.com/overlay/64f1b6ea2748035d386cb43a"></iframe>
+    <iframe src="https://santiysergio.github.io/reloj.github.io/"></iframe>
 </body>
 </html>
